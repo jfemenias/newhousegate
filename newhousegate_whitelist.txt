@@ -1,0 +1,55 @@
+# Phones that can open the NewHouse Gate by calling 982 140978
+# Comment lines are optional
+#
+# The parameter “seconds_light_on” specifies how many seconds will
+# the system call the IFTTT rule to turn the lights (farolas) on
+# It this isn’t present it will take 600 as default (ten minutes)
+#
+# seconds_lights_on, 600
+#
+# This file resides at:
+# https://dl.dropboxusercontent.com/u/36752286/newhousegate_whitelist.txt
+#
+# testing_lights, True | False
+#
+# If test_mode is set to “True” the program will activate the lights
+# at any time, whenever the gate is opened, even if it isn’t dark
+# By default is False
+#
+# 
+# To add or remove an authorized user, change this file, wait until Dropbox
+# updates it, and then reboot the Raspberry (clave: puerta)
+#
+# ssh pi@192.168.1.14
+# sudo reboot
+#
+# (Further instructions at google docs “Configuraciones varias JFC” 
+# at pepe.femenias@gmail.com
+#
+# www.drivehq.com user315 (user315@mailinator.com) pwd: 123-456
+# Used to save latest copy of python script
+#
+#
+testing_lights,False
+seconds_lights_on,300
+#
+# JFC:
+651955102,José Femenías
+# María:
+722715028,María Femenías Hermida
+# Anuska:
+620260812,Ana Hermida Lage
+# Alberto:
+626026842,Alberto Femenías Hermida
+# Mary Paz:
+647673632,Mary Paz
+# Elsa:
+689874360,Elsa
+# Valle home
+# 664415721,Valle (personal)
+# Valle work
+# 687772243,Valle (trabajo)
+# Angel Hermida Lage:
+649481045, Ángel Hermida Lage
+# Álex:
+6606397376, Alejandro Hermida Artiaga
