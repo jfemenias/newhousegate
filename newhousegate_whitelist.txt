@@ -31,7 +31,7 @@
 #
 #
 testing_lights,False
-seconds_lights_on,300
+seconds_lights_on,60
 #
 # JFC:
 651955102,José Femenías
