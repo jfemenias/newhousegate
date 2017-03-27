@@ -214,7 +214,7 @@ def main():
   white_list_url = 'https://raw.githubusercontent.com/jfemenias/tutorial/initial/newhousegate_whitelist.txt'
   white_list_numbers, white_list_names, white_list_phonebook = get_whitelist()
 
-  cam = sipPuerta(username='0982140978', password='479add2d', whitelist=white_list_numbers) 
+  cam = sipPuerta(username='09821409xx', password='47xxxxxx', whitelist=white_list_numbers) 
 
   cam.run()
   GPIO.cleanup() ## clear all GPIO
