@@ -45,10 +45,8 @@ seconds_lights_on,180
 647673632,Mary Paz
 # Elsa:
 689874360,Elsa
-# Valle home
-# 664415721,Valle (personal)
-# Valle work
-# 687772243,Valle (trabajo)
+# Valle
+687772243,Valle (trabajo)
 # Angel Hermida Lage:
 649481045, Ángel Hermida Lage
 # Álex:
