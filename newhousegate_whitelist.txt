@@ -33,6 +33,8 @@
 testing_lights,False
 seconds_lights_on,180
 #
+# BLANK:
+666777889,Blank Username
 # JFC:
 651955102,José Femenías
 # María:
