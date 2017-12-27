@@ -5,10 +5,10 @@ from sip_luces import *
 
 macs = {
     'fca6677d72de' : 'dash-on',
-    'ac63be7c6467' : 'dash-fairy',
-    'fca6677a9af4' : 'dash-ambipur',
-    'ac63beaae06a' : 'dash-bsn',
-    '000000000000' : 'dash-on2',
+    'ac63be7c6467' : 'dash-fairy',        # Serial G030M90363848352
+    'fca6677a9af4' : 'dash-ambipur',      # Serial G030QC0373326649
+    'ac63beaae06a' : 'dash-bsn',          # Serial G030M90364563924
+    'fca667a8aca2' : 'dash-on2',          # Serial G030QC0372843332
     '000000000000' : 'dash-unasigned1',
     '000000000000' : 'dash_unasigned2'
 }
