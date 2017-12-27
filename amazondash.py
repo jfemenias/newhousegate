@@ -5,23 +5,40 @@ from sip_luces import *
 
 macs = {
     'fca6677d72de' : 'dash-on',
-    '000000000000' : 'dash-fairy',
-    '000000000000' : 'dash-ambipur',
-    '000000000000' : 'dash-bsn',
+    'ac63be7c6467' : 'dash-fairy',
+    'fca6677a9af4' : 'dash-ambipur',
+    'ac63beaae06a' : 'dash-bsn',
     '000000000000' : 'dash-on2',
     '000000000000' : 'dash-unasigned1',
     '000000000000' : 'dash_unasigned2'
 }
 events  = {
-    'dash-on'      : 'Focos ON/OFF',
-    'dash-fairy'   : 'Farolas ON/OFF'
+    'dash-on'      : 'Focos ON/OFF (ON)',
+    'dash-fairy'   : 'Farolas ON/OFF (Fairy)',
+    'dash-ambipur' : 'Sin asignar <ambipur>',
+    'dash-bsn'     : 'Sin asignar <bsn>',
+    'dash-on2'     : 'Sin asignar ON(2)'
+}
+status  = {
+    'dash-on'      : 'off',
+    'dash-fairy'   : 'off',
+    'dash-ambipur' : 'off',
+    'dash-bsn'     : 'off',
+    'dash-on2'     : 'off'
 }
 
 
 rawSocket = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.htons(0x0003))
 
 focos = IFTTT_Farolas(False,True)
-onoff  = 'off'
+
+def flipStatus( status ):
+  if status == 'on':
+    return 'off'
+  else:
+    return 'on'
+
+
 
 while True:
 
@@ -38,19 +55,19 @@ while True:
     ethertype = ethernet_detailed[2]
     if ethertype != '\x08\x06':
         continue
+    #print " --- ARP from : " + source_mac
     if source_mac in macs:
+      buttonId = macs[source_mac]
+      status[ buttonId ] = flipStatus( status[buttonId] )
 
       print "------  Amazon dash button pressed ---------------------"
 
-      print "        Button pressed   : " + macs[source_mac]
-      print "        Evento  asociado : " + events[macs[source_mac]]
-      if macs[source_mac] == 'dash-on':
-        if onoff == 'off':
-          onoff = 'on'
-        else:
-          onoff = 'off'
-        print "        Status           : " + onoff
+      print "        Button pressed   : " + buttonId
+      print "        Evento  asociado : " + events[buttonId]
+
+      if buttonId  == 'dash-on':
+        print "        Status           : " + status[buttonId]
         #focos.turnOnForSeconds(300)
-        focos.remoteCall(onoff)
+        focos.remoteCall(status[buttonId])
 
       print "--------------------------------------------------------"
