@@ -53,3 +53,5 @@ seconds_lights_on,180
 649481045, Ángel Hermida Lage
 # Álex:
 6606397376, Alejandro Hermida Artiaga
+# Ana Fernández de la Franca:
+637536399, Ana de la Franca
