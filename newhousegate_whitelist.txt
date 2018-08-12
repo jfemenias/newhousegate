@@ -46,9 +46,9 @@ seconds_lights_on,180
 # Mary Paz:
 647673632,Mary Paz
 # Elsa:
-689874360,Elsa
+# 689874360,Elsa
 # Valle
-687772243,Valle (trabajo)
+687772243,Valle (privado)
 # Angel Hermida Lage:
 649481045, Ángel Hermida Lage
 # Álex:
