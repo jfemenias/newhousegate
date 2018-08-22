@@ -57,3 +57,9 @@ seconds_lights_on,180
 637536399, Ana de la Franca
 # José Manuel (Pega):
 676581692, Jose Manuel Pega
+# Jose Luis Segura (Chiqui):
+655153097
+# Marta Segura Femenías:
+618423980
+# María José Femenías Cañuelo (Nena):
+650295411
