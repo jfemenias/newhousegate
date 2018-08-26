@@ -58,10 +58,10 @@ seconds_lights_on,180
 # José Manuel (Pega):
 676581692, Jose Manuel Pega
 # Jose Luis Segura (Chiqui):
-655153097, Chiqui
+# 655153097, Chiqui
 # Marta Segura Femenías:
-618423980, Marta
+# 618423980, Marta
 # María José Femenías Cañuelo (Nena):
-650295411, Nena
+#650295411, Nena
 # End
-666777888, Fin
+# 666777888, Fin
