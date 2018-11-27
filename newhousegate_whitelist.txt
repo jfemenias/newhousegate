@@ -65,3 +65,15 @@ seconds_lights_on,180
 #650295411, Nena
 # End
 # 666777888, Fin
+# AB David
+670014583, AB David
+# AB Antonio
+646242361, AB Antonio
+# AB Benito
+687524069, AB Benito
+# AB Elías
+682705383, AB Elías
+# AB Gonzalo
+670014587, AB Gonzalo
+# AB Miguel
+683152438, AB Miguel
