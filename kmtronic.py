@@ -1,4 +1,5 @@
 __author__ = 'josefemenias'
+# Documentation https://info.kmtronic.com/manuals/user_manuals/UD8CR_UDP_EIGHT_CHANNEL_RELAY.pdf
 import binascii
 import socket
 import time
